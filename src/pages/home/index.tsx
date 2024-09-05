@@ -3,11 +3,12 @@ import { Button, Container, Img, Input, InputContainer, InputIcon, InputWrapper,
 import logo from '../../assets/icon-readme.png'
 import iconName from '../../assets/icon-user.png'
 import iconDescription from '../../assets/icon-description.png'
+import { Title } from "../../components/title";
 
 export function Home() {
   return (
     <Container>
-      <h1>Bem vindo ao Gerador de Readme!</h1>
+      <Title />
       <SubContainer>
         <LogContainer>
           <Img src={logo} alt="logo" />

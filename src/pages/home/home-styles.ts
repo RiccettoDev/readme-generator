@@ -20,7 +20,7 @@ export const SubContainer = styled.div`
   color: white;
   border-radius: 5%;
   width: 50%;
-  height: 80%;
+  height: 70%;
   background-color: #2176a5;
   border: 2px solid #00d9ff;
   box-shadow: 0px 0px 15px #00d9ff, 0px 0px 15px #00d9ffc0 inset;

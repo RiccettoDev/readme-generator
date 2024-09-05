@@ -1,13 +1,48 @@
-import { Button, Container, Img, Input, InputContainer, InputIcon, InputWrapper, LogContainer, SubContainer } from "./home-styles";
+import { useRef, useState } from "react";
+import {
+  AudioButton,
+  Button,
+  Container,
+  Img,
+  Input,
+  InputContainer,
+  InputIcon,
+  InputWrapper,
+  LogContainer,
+  SubContainer
+} from "./home-styles";
+import { Title } from "../../components/title";
+import { IoVolumeMediumSharp, IoVolumeMute } from "react-icons/io5";
+
+import backgroundMusic from '../../../public/background-music.mp3'
 
 import logo from '../../assets/icon-readme.png'
 import iconName from '../../assets/icon-user.png'
 import iconDescription from '../../assets/icon-description.png'
-import { Title } from "../../components/title";
 
 export function Home() {
+  const [isMuted, setIsMuted] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const handleMuteToggle = () => {
+    if (audioRef.current) {
+      audioRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
+
   return (
     <Container>
+      <audio
+        src={backgroundMusic}
+        autoPlay
+        loop
+        ref={audioRef}
+        muted={isMuted} // Controla o mudo com base no estado
+      />
+      <AudioButton onClick={handleMuteToggle}>
+        {isMuted ? <IoVolumeMediumSharp size={30} color="#00d9ff" /> : <IoVolumeMute size={30} color="#00d9ff" />}
+      </AudioButton>
       <Title />
       <SubContainer>
         <LogContainer>

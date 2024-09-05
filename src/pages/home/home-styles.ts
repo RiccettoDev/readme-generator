@@ -198,3 +198,12 @@ export const Button = styled.button`
     scale: calc(80%);
   }
 `;
+
+export const AudioButton = styled.button`
+  position: absolute;
+  top: 2em;
+  right: 4em;
+  background: none;
+  border: none;
+`;
+

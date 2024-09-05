@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import {
-  AudioButton,
   Button,
   Container,
   Img,
@@ -12,7 +11,6 @@ import {
   SubContainer
 } from "./home-styles";
 import { Title } from "../../components/title";
-import { IoVolumeMediumSharp, IoVolumeMute } from "react-icons/io5";
 
 import backgroundMusic from '../../../public/background-music.mp3'
 
@@ -20,21 +18,14 @@ import logo from '../../assets/icon-readme.png'
 import iconName from '../../assets/icon-user.png'
 import iconDescription from '../../assets/icon-description.png'
 import { ModalCreate } from "../../components/modalCreate";
+import { Footer } from "../../components/footer";
 
 export function Home() {
   const audioRef = useRef<HTMLAudioElement>(null);
-  const [isMuted, setIsMuted] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const [projectName, setProjectName] = useState("");
   const [projectDescription, setProjectDescription] = useState("");
-
-  const handleMuteToggle = () => {
-    if (audioRef.current) {
-      audioRef.current.muted = !isMuted;
-      setIsMuted(!isMuted);
-    }
-  };
 
   const openModal = () => {
     setIsModalVisible(true);
@@ -52,10 +43,8 @@ export function Home() {
         loop
         ref={audioRef}
         controls
+        style={{ top: '0' }}
       />
-      <AudioButton onClick={handleMuteToggle}>
-        {isMuted ? <IoVolumeMediumSharp size={30} color="#00d9ff" /> : <IoVolumeMute size={30} color="#00d9ff" />}
-      </AudioButton>
       <Title />
       <SubContainer>
         <LogContainer>
@@ -95,6 +84,7 @@ export function Home() {
           projectDescription={projectDescription}
         />
       )}
+      <Footer />
     </Container>
   )
 }

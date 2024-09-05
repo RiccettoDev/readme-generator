@@ -2,5 +2,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(to right, #0ebeff, #9479d5);
+  overflow-x: hidden;
+  background: linear-gradient(to right, #0a4257, #247caf);
 }

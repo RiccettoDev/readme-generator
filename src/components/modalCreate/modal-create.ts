@@ -18,6 +18,7 @@ export const CloseButton = styled.button`
   align-items: center;
   justify-content: center;
   border: none;
+  border-radius: 20px;
   color: #104f6b;
   width: 30px;
   height: 30px;
@@ -59,14 +60,17 @@ export const Input = styled.input`
 `;
 
 export const SaveButton = styled.button`
+  width: 80% ;
   padding: 10px 20px;
   background-color: #00d9ff;
   font-size: 16px;
   font-weight: bold;
   border: none;
+  border-radius: 20px;
   color: #008ecf;
+  border-radius: 20px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 48px;
 
   &:hover {
     background-color: #008ecf;
@@ -90,6 +94,7 @@ export const AddButton = styled.button`
   padding: 10px 20px;
   background-color: #00d9ff;
   border: none;
+  border-radius: 20px;
   color: white;
   cursor: pointer;
   margin: 10px 0;

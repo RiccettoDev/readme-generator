@@ -47,7 +47,6 @@ export function ModalCreate({ isOpen, onClose, projectName, projectDescription }
   const [selectedTechnology, setSelectedTechnology] = useState<string>("");
   const [selectedSecondaryTechnology, setSelectedSecondaryTechnology] = useState<string>("");
   const [newDependency, setNewDependency] = useState<string>("");
-  const [contactLink, setContactLink] = useState("");
   const [projectLink, setProjectLink] = useState("");
   const [markdownContent, setMarkdownContent] = useState("");
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
@@ -82,7 +81,7 @@ Click here to change the language:
 
 # ${projectName}
 
-The **${projectName}** ${projectDescription}
+${projectDescription}
 
 :computer: [Click here to access the application](${projectLink})
 
@@ -129,10 +128,10 @@ You may also see any lint errors in the console.
 ## Contact
 
 <div>
-  <a href="${contactLink}" target="_blank"><img src="https://img.shields.io/badge/portifolio-FF0000?style=for-the-badge&logo=unitednations&logoColor=white" target="_blank" alt="Portfolio"></a>
-  <a href="https://instagram.com/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank" alt="Instagram"></a> 
-  <a href="mailto:riccettodev@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank" alt="Gmail"></a>
-  <a href="https://www.linkedin.com/in/eduardo-peixoto-riccetto-094a53a2/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" alt="LinkedIn"></a> 
+  <a href="https://portfolio-ten-lime-67.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/portifolio-FF0000?style=for-the-badge&logo=unitednations&logoColor=white" target="_blank"></a>
+  <a href="https://instagram.com/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
+  <a href = "mailto:riccettodev@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/eduardo-peixoto-riccetto-094a53a2/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
     `;
 
@@ -194,12 +193,6 @@ You may also see any lint errors in the console.
         />
         <AddButton onClick={handleAddDependency}>Adicionar Dependência</AddButton>
 
-        <Input
-          placeholder="Link de contato"
-          value={contactLink}
-          onChange={(e) => setContactLink(e.target.value)}
-        />
-
         <SaveButton onClick={handleSave}>Salvar e Visualizar</SaveButton>
       </Container>
 
@@ -226,7 +219,7 @@ function ModalPreview({ isOpen, onClose, markdownContent }: ModalPreviewProps) {
   return (
     <ContainerMarkdown>
       <CloseButton onClick={onClose}>X</CloseButton>
-      <div style={{ margin: "20px 0" }}>
+      <div style={{ margin: "20px 0", overflowY: 'hidden' }}>
         <h3>Visualização do Markdown</h3>
         <pre style={{ whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>{markdownContent}</pre>
       </div>

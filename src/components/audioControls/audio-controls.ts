@@ -18,4 +18,8 @@ export const AudioContainer = styled.div`
     border-radius: 5px;
     outline: none;
   }
+
+  audio::-webkit-media-controls-panel{
+    background-color: red;
+  }
 `;

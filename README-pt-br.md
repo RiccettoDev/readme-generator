@@ -1,19 +1,17 @@
 
-Click here to change the language:
+Clique aqui para alterar o idioma:
 
 [![flag-eua](./src/img/doc/eua.png)](./README.md) [![flag-brasil](./src/img/doc/brasil.png)](./README-pt-br.md)
 
 # Readme Generator
 
-The Readme Generator project is a web application developed to automate the creation of standardized and styled README files for software projects. With a focus on productivity and standardization, the tool simplifies the generation of comprehensive documentation, ensuring that each project has a clear, organized, and attractive description. The application was built using the React library, providing a modern and intuitive interface that allows users to easily create and customize their README files. Additionally, the project utilizes styled-components, enabling the creation of custom styles directly within React components, ensuring visual consistency in every generated README.
-
-Key features include the ability to define specific sections such as project description, technologies used, installation instructions, usage, and more. The Readme Generator also incorporates stylized icons, thanks to integration with the react-icons library, offering a unique visual touch to README files. The Readme Generator not only simplifies the documentation process for developers but also promotes essential standardization for software project organization.
+O projeto Readme Generator é uma aplicação web desenvolvida para automatizar a criação de arquivos README padronizados e estilizados para projetos de software. Com foco na produtividade e padronização, a ferramenta facilita a geração de documentações completas, garantindo que cada projeto possua uma descrição clara, organizada e atrativa.  A aplicação foi construída utilizando a biblioteca React, proporcionando uma interface moderna e intuitiva, que permite ao usuário criar e personalizar seus README files com facilidade. Além disso, o projeto faz uso de styled-components, permitindo a criação de estilos customizados diretamente nos componentes React, garantindo consistência visual em cada README gerado.  Entre as funcionalidades principais estão a possibilidade de definir seções específicas como descrição do projeto, tecnologias utilizadas, instruções de instalação, uso, e muito mais. O Readme Generator também inclui ícones estilizados, graças à integração com a biblioteca react-icons, oferecendo um toque visual diferenciado aos arquivos README. O Readme Generator não só simplifica o processo de documentação para os desenvolvedores, como também promove uma padronização essencial para a organização de projetos de software.
 
 :computer: [Click here to access the application](https://readme-generator-cyan.vercel.app/)
 
 ![Readme Generator](./src/img/doc/project.png)
 
-## Technologies
+## Tecnologias
 
 ![Static Badge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=ffffff&labelColor=F7DF1E)
 ![Static Badge](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=ffffff&labelColor=61DAFB)
@@ -23,7 +21,7 @@ Key features include the ability to define specific sections such as project des
 ![Static Badge](https://img.shields.io/badge/StyledComponents-DB7093?style=for-the-badge&logo=styled-components&logoColor=ffffff&labelColor=DB7093)
 ![Static Badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=ffffff&labelColor=007ACC)
 
-## Secondary Technologies
+## Tecnologias Secundárias
 
 ![Static Badge](https://img.shields.io/badge/Npm-CB3837?style=for-the-badge&logo=npm&logoColor=ffffff&labelColor=CB3837)
 ![Static Badge](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=ffffff&labelColor=007ACC)
@@ -32,7 +30,7 @@ Key features include the ability to define specific sections such as project des
 ![Static Badge](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=181717)
 ![Static Badge](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=ffffff&labelColor=000000)
 
-## Dependencies
+## Dependencias:
 
 - react
 - react-dom
@@ -42,23 +40,23 @@ Key features include the ability to define specific sections such as project des
 - typeScript
 - ESLint
 
-## Getting Started
+## Começando
 
-This project can be used on your own machine after performing a PUSH of this repository.
+Este projeto pode ser usado em sua própria máquina após realizar um **PUSH** deste repositório.
 
 ### `npm install`
 
-To download and update all project libraries and dependencies
+Para baixar e atualizar todas as bibliotecas e dependências do projeto
 
 ### `npm start`
 
-Runs the application in development mode.
-Open [http://localhost:5173/](http://localhost:5173/) to view it in your browser, or another port that the project is using.
+Executa aplicativo em modo desenvolvimento.\
+Abra [http://localhost:5173/](http://localhost:5173/) para vizualizá-lo em seu navegador.
 
-The page will reload when you make changes.
-You may also see any lint errors in the console.
+A pagina será recarregada quando você fizer alterações.\
+Você também pode ver quaisquer erros de lint no console.
 
-## Contact
+## Contato
 
 <div>
   <a href="https://portfolio-ten-lime-67.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/portifolio-FF0000?style=for-the-badge&logo=unitednations&logoColor=white" target="_blank"></a>

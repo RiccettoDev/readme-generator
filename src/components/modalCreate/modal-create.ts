@@ -11,6 +11,16 @@ export const Container = styled.div`
   border: 2px solid #00d9ff;
   box-shadow: 0px 0px 15px #00d9ff, 0px 0px 15px #00d9ffc0 inset;
   border-radius: 10%;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  @media (max-width: 480px) {
+    width: 75%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 `;
 
 export const CloseButton = styled.button`
@@ -36,6 +46,11 @@ export const CloseButton = styled.button`
 
   @media (max-width: 768px) {
     margin-right: -1em;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: -1.5em;
+    margin-right: -2.5em;
   }
 `;
 
@@ -117,6 +132,16 @@ export const ContainerMarkdown = styled.div`
   border: 2px solid #00d9ff;
   box-shadow: 0px 0px 15px #00d9ff, 0px 0px 15px #00d9ffc0 inset;
   border-radius: 10%;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    margin-right: 1em;
+  }
+
+  @media (max-width: 480px) {
+    width: 80%;
+    margin-right: 1em;
+  }
 `;
 
 export const CopyButton = styled.button`
@@ -134,5 +159,13 @@ export const CopyButton = styled.button`
   &:hover {
     background-color: #008ecf;
     color: #CCCCCC;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: -2em;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: -1em;
   }
 `;

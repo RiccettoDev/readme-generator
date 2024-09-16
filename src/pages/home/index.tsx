@@ -56,7 +56,7 @@ export function Home() {
               <Img src={iconName} alt="icon name" />
             </InputIcon>
             <Input
-              placeholder="Digite o nome do projeto"
+              placeholder="Nome do projeto"
               value={projectName}
               onChange={(e) => setProjectName(e.target.value)}
             />
@@ -66,7 +66,7 @@ export function Home() {
               <Img src={iconDescription} alt="icon name" />
             </InputIcon>
             <Input
-              placeholder="Digite a descrição do projeto"
+              placeholder="Descrição do projeto"
               value={projectDescription}
               onChange={(e) => setProjectDescription(e.target.value)}
             />

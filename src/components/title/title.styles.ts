@@ -8,6 +8,15 @@ interface LetterProps {
 export const Container = styled.div`
   display: flex;
   gap: 10px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 16px;
+    margin-right: 10px;
+  }
 `;
 
 export const Letter = styled.h1<LetterProps>`
@@ -26,5 +35,13 @@ export const Letter = styled.h1<LetterProps>`
       color: #FFF;
       text-shadow: 0 0 12px #00d9ff, 0 0 50px #00d9ff, 0 0 100px #00d9ff;
     }
+  }
+
+  @media (max-width: 768px) {
+    gap: 24px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 18px;
   }
 `;

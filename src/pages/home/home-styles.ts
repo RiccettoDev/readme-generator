@@ -9,6 +9,16 @@ export const Container = styled.div`
   color: #00d9ff;
   width: 100%;
   height: 100vh;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+    gap: 8px;
+  }
 `;
 
 export const SubContainer = styled.div`
@@ -26,87 +36,15 @@ export const SubContainer = styled.div`
   box-shadow: 0px 0px 15px #00d9ff, 0px 0px 15px #00d9ffc0 inset;
   position: relative;
 
-  /* Primeiro pseudo-elemento para o primeiro brilho */
-  &::before {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(0, 217, 255, 0));
-    border-radius: 50%;
-    box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.5);
-    
-    /* Animação para o primeiro brilho */
-    animation: moveAround 40s linear infinite;
+  @media (max-width: 768px) {
+    width: 80%;
+    height: 60%;
   }
 
-  /* Segundo pseudo-elemento para o segundo brilho */
-  &::after {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(0, 217, 255, 0));
-    border-radius: 50%;
-    box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.5);
-    
-    /* Animação para o segundo brilho */
-    animation: moveAroundReverse 40s linear infinite;
-  }
-
-  /* Animação para o brilho que se move no sentido horário */
-  @keyframes moveAround {
-    0% {
-      top: 0;
-      left: 0;
-    }
-    25% {
-      top: 0;
-      left: 100%;
-      transform: translateX(-100%);
-    }
-    50% {
-      top: 100%;
-      left: 100%;
-      transform: translate(-100%, -100%);
-    }
-    75% {
-      top: 100%;
-      left: 0;
-      transform: translateY(-100%);
-    }
-    100% {
-      top: 0;
-      left: 0;
-    }
-  }
-
-  /* Animação para o brilho que se move no sentido anti-horário */
-  @keyframes moveAroundReverse {
-    0% {
-      top: 100%;
-      left: 100%;
-      transform: translate(-100%, -100%);
-    }
-    25% {
-      top: 100%;
-      left: 0;
-      transform: translateY(-100%);
-    }
-    50% {
-      top: 0;
-      left: 0;
-    }
-    75% {
-      top: 0;
-      left: 100%;
-      transform: translateX(-100%);
-    }
-    100% {
-      top: 100%;
-      left: 100%;
-      transform: translate(-100%, -100%);
-    }
+  @media (max-width: 480px) {
+    width: 80%;
+    height: 50%;
+    margin-right: 15px;
   }
 `;
 
@@ -121,11 +59,31 @@ export const LogContainer = styled.div`
   border: 2px solid #00d9ff;
   box-shadow: 0px 0px 15px #00d9ff, 0px 0px 15px #00d9ffc0 inset;
   border-radius: 50%;
+
+  @media (max-width: 768px) {
+    width: 50%;
+    height: 20%;
+  }
+
+  @media (max-width: 480px) {
+    width: 30%;
+    height: 15%;
+  }
 `;
 
 export const Img = styled.img`
   width: 80%;
   height: 80%;
+
+  @media (max-width: 768px) {
+    width: 60%;
+    height: 60%;
+  }
+
+  @media (max-width: 480px) {
+    width: 70%;
+    height: 90%;
+  }
 `;
 
 export const InputContainer = styled.div`
@@ -136,12 +94,31 @@ export const InputContainer = styled.div`
   justify-content: center;
   width: 100%;
   height: 40%;
+
+  @media (max-width: 768px) {
+    gap: 24px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 16px;
+    width: 80%;
+  }
 `;
 
 export const InputWrapper = styled.div`
   position: relative;
   width: 80%;
   height: 48px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    margin-right: 65px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-right: 45px;
+  }
 `;
 
 export const InputIcon = styled.div`
@@ -151,6 +128,10 @@ export const InputIcon = styled.div`
   transform: translateY(-50%);
   color: #00d9ff;
   font-size: 20px;
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 export const Input = styled.input`
@@ -173,6 +154,18 @@ export const Input = styled.input`
     color: #00A7FFC0;
     font-weight: bold;
     font-size: 18px;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    font-size: 16px;
+    padding-left: 10%;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    font-size: 14px;
+    padding-left: 20%;
   }
 `;
 
@@ -197,13 +190,14 @@ export const Button = styled.button`
   &:active {
     scale: calc(80%);
   }
-`;
 
-export const AudioButton = styled.button`
-  position: absolute;
-  top: 2em;
-  right: 4em;
-  background: none;
-  border: none;
-`;
+  @media (max-width: 768px) {
+    width: 90%;
+    height: 50px;
+  }
 
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 48px;
+  }
+`;
